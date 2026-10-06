@@ -399,7 +399,7 @@ footer {
   position: relative;
 }
 .hero2 {
-  background: url("foamParty.webp") no-repeat center center/contain;
+  background: url("images/foamParty.webp") no-repeat center center/contain;
   background-color: #000;
   background-size: cover; 
   height: 600px;
@@ -426,7 +426,7 @@ iframe{
   border: none;
 }
 .imgsection{
-   background: url("dirtySoda.webp") no-repeat center center/contain;
+   background: url("images/dirtySoda.webp") no-repeat center center/contain;
   background-color: #000;
   background-size: cover; 
   height: 600px;
