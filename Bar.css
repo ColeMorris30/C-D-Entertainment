@@ -129,10 +129,10 @@ iframe {
   transform: scale(1.07);
 }
 
-.Sips-and-Stacks { background-image: url("Logo3.PNG"); }
-.Epic-Foam-Party { background-image: url("Logo4.PNG"); }
-.ARentals        { background-image: url("Logo5.PNG"); }
-.CD-Bartending   { background-image: url("Logo2.PNG"); }
+.Sips-and-Stacks { background-image: url("images/Logo3.PNG"); }
+.Epic-Foam-Party { background-image: url("images/Logo4.PNG"); }
+.ARentals        { background-image: url("images/Logo5.PNG"); }
+.CD-Bartending   { background-image: url("images/Logo2.PNG"); }
 
 
 .fade-in {
@@ -280,7 +280,7 @@ footer {
 
 
 .logo {
-  background-image: url("Logo2.PNG");
+  background-image: url("images/Logo2.PNG");
   height: 100px;
   width: 100px;
   background-size: contain;
@@ -289,7 +289,7 @@ footer {
   border: solid rgb(255, 255, 255) 2px;
 }
 .logo2 {
-  background-image: url("Logo3.PNG");
+  background-image: url("images/Logo3.PNG");
   height: 100px;
   width: 100px;
   background-size: contain;
@@ -314,21 +314,21 @@ footer {
 
 
 .nav-logo {
-  background-image: url("Logo2.PNG");
+  background-image: url("images/Logo2.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
 }
 .nav-logo4 {
-  background-image: url("Logo4.PNG");
+  background-image: url("images/Logo4.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
 }
 .nav-logo3 {
-  background-image: url("Logo3.PNG");
+  background-image: url("images/Logo3.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
@@ -341,7 +341,7 @@ footer {
   height: 70px;
 }
 .nav-logo5 {
-  background-image: url("Logo5.PNG");
+  background-image: url("images/Logo5.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 70px;
@@ -377,7 +377,7 @@ footer {
 
 
 .hero {
-  background: url("backgroundimg1.png") no-repeat center center/contain;
+  background: url("images/backgroundimg1.png") no-repeat center center/contain;
   background-color: #000;
   background-size: 100%;
   height: 1000px;
@@ -388,7 +388,7 @@ footer {
   position: relative;
 }
 .hero1 {
-  background: url("stacks.jpg") no-repeat center center/contain;
+  background: url("images/stacks.jpg") no-repeat center center/contain;
   background-color: #000;
   background-size: cover; 
   height: 600px;
@@ -410,7 +410,7 @@ footer {
   position: relative;
 }
 .hero3 {
-  background: url("A+Rentals.jpg") no-repeat center center/contain;
+  background: url("images/A+Rentals.jpg") no-repeat center center/contain;
   background-color: #000;
   background-size: cover; 
   height: 600px;
@@ -437,7 +437,7 @@ iframe{
   position: relative;
 }
 .imgsection1{
-   background: url("Party.jpg") no-repeat center center/contain;
+   background: url("images/Party.jpg") no-repeat center center/contain;
  background-color: #000;
   background-size: cover; 
   height: 600px;
