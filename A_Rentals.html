@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A+ Rentals</title>
+  <link rel="stylesheet" href="Bar.css">
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+<nav class="global-nav">
+  <div class="nav-logo5"></div>
+  <ul class="nav-menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="Sips_Stacks.html">Sips & Stacks</a></li>
+    <li><a href="EpicFoamParty.html">Epic Foam Party</a></li>
+    <li><a href="A_Rentals.html" class="active">A+ Rentals</a></li>
+    <li><a href="index.html">Bartending Service</a></li>
+  </ul>
+  <div class="nav-toggle">☰</div>
+</nav>
+
+<header class="hero3 reveal">
+  <div class="overlay"></div>
+  <div class="hero-content1s">
+    <h1 style="color:white; font-weight:bold; font-size: 35px; background-color: black;">A+ Rentals: Event Essentials</h1>
+    <br>
+    <p style="color:black; font-weight:bold;background-color: white;">Providing high-quality rental equipment for unforgettable events.</p>
+    <br>
+    <a href="#contact" class="btn">Request Availability</a>
+  </div>
+</header>
+
+<section id="about" class="section alt-theme reveal">
+    <h2>About A+ Rentals</h2>
+    <p><strong>A+ Rentals: Receptions, Parties & Events</strong> supplies tables, chairs, backyard games, and many more items to support you on your big day.</p>
+    <p>Click the logo to check out our list of items and message us for any and all questions.</p>
+</section>
+
+<header class="imgsection1 reveal"></header>
+
+<section id="services" class="section light-bg feature-section reveal">
+  <h2>Popular Rentals</h2>
+  <div class="service-grid">
+    <div class="service-card highlight">
+      <h3>Party Foam Cannon</h3>
+      <p>Create an unforgettable experience with a safe, high-output foam cannon perfect for outdoor events.</p>
+    </div>
+    <div class="service-card">
+      <h3>Speakers & Audio Gear</h3>
+      <p>Professional-grade speakers, microphones, and mixers for music, announcements, or DJs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Lighting & Decor</h3>
+      <p>Stage lighting, ambient decor, and customizable lighting setups to match your theme.</p>
+    </div>
+    <div class="service-card">
+      <h3>Tables, Tents & Seating</h3>
+      <p>Reliable, clean, and stylish seating options designed to fit events of all sizes.</p>
+    </div>
+  </div>
+</section>
+
+<table class="reveal">
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Party Foam Cannon</td>
+        <td>High-output foam cannon for outdoor fun.</td>
+        <td>$150/day</td>
+    </tr>
+    <tr>
+        <td>Speakers & Audio Gear</td>
+        <td>Professional speakers, microphones, and mixers.</td>
+        <td>$100/day</td>
+    </tr>
+    <tr>
+        <td>Lighting & Decor</td>
+        <td>Stage lighting and ambient decor options.</td>
+        <td>$80/day</td>
+    </tr>
+    <tr>
+        <td>Tables, Tents & Seating</td>
+        <td>Reliable, clean, and stylish seating options designed to fit events of all sizes.</td>
+        <td>$120/day</td>
+    </tr>
+</table>
+
+<section id="contact" class="section light-bg reveal">
+  <h2>Book Rentals</h2>
+  <p>Tell us what you're planning, and we'll help you find the perfect equipment.</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Event Details" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer class="reveal">
+  <p>© 2025 A+ Rentals | Castalia, OH</p>
+  <a href="https://www.facebook.com/share/1Mt6kWymyD/?mibextid=wwXIfr">Facebook</a>
+</footer>
+
+<script>
+
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+if(navToggle){
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+}
+
+
+function revealOnScroll() {
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>

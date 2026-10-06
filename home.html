@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C&D Mobile Bartending</title>
+  <link rel="stylesheet" href="Bar.css">
+</head>
+<body>
+<nav class="global-nav">
+<div></div>
+
+  <ul class="nav-menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="Sips_Stacks.html">Sips & Stacks</a></li>
+    <li><a href="EpicFoamParty.html">Epic Foam Party</a></li>
+    <li><a href="A_Rentals.html">A+ Rentals</a></li>
+    <li><a href="index.html">Bartending Service</a></li>
+  </ul>
+
+  <div class="nav-toggle">☰</div>
+</nav>
+
+<header class="Banner fade-in">
+    <img src="Logo1.PNG" alt="C&D Mobile Bartending Logo">
+</header>
+
+<main>
+  <h1 id="Welcome_Tag" class="fade-in-up">Welcome, and Thank You for Visiting Our Page!</h1>
+
+  <div class="Intro fade-in-up">
+      <p>We created our businesses with one goal in mind: to help you make unforgettable memories. Whether you're planning a wedding reception, birthday celebration, corporate event, or any special occasion, our team is here to support you and ensure your event is everything you envision.</p>
+
+      <p>We are excited to introduce four dedicated businesses, each designed to serve a unique part of your event experience. Below, you'll find links to each service page—simply choose the one that best fits your needs.</p>
+  </div>
+
+  <div class="container">
+
+      <div class="service-box Sips-and-Stacks hover-glow">
+          <div class="overlay"></div>
+          <button onclick="location.href='Sips_Stacks.html'">Visit Sips & Stacks</button>
+      </div>
+
+      <div class="service-box Epic-Foam-Party hover-glow">
+          <div class="overlay"></div>
+          <button onclick="location.href='EpicFoamParty.html'">Visit Epic Foam Party</button>
+      </div>
+
+      <div class="service-box ARentals hover-glow">
+          <div class="overlay"></div>
+          <button onclick="location.href='A_Rentals.html'">Visit A+ Rentals</button>
+      </div>
+
+      <div class="service-box CD-Bartending hover-glow">
+          <div class="overlay"></div>
+          <button onclick="location.href='index.html'">Visit Mobile Bartending Service</button>
+      </div>
+
+  </div>
+</main>
+
+<footer>
+    <p>We are now accepting reservations for 2026. Contact us for your unique catering needs, experienced bartenders, foam machine and your rental needs for your wedding, birthday party or corporate events. Thank you everyone.</p>
+    <a href="https://www.facebook.com/share/1Mt6kWymyD/?mibextid=wwXIfr">Facebook</a>
+</footer>
+
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if(navToggle){
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+}
+</script>
+
+</body>
+</html>

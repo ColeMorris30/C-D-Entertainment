@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sips & Stacks</title>
+  <link rel="stylesheet" href="Bar.css">
+ <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="global-nav">
+  <div class="nav-logo3"></div>
+  <ul class="nav-menu">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Sips_Stacks.html">Sips & Stacks</a></li>
+    <li><a href="EpicFoamParty.html">Epic Foam Party</a></li>
+    <li><a href="A_Rentals.html">A+ Rentals</a></li>
+    <li><a href="index.html">Bartending Service</a></li>
+  </ul>
+  <div class="nav-toggle">☰</div>
+</nav>
+
+<header class="hero1 fade-in-up fade-delay-2">
+  <div class="overlay"></div>
+  <div class="hero-content1s">
+    <h1 style="color:black; font-weight:bold; font-size: 35px;">Sips & Stacks: A Taste Adventure</h1>
+    <p style="color:black; font-weight:bold;">Delight in our unique blend of delicious drinks and mini pancakes.</p>
+    <br>
+    <a href="#contact" class="btn">Reserve Your Experience</a>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="section alt-theme fade-in-up fade-delay-3">
+  <h2>About Sips & Stacks</h2>
+  <p><strong>Sips & Stacks</strong> is our fun‑filled business dedicated to crafting tasty recipes that delight your taste buds. We specialize in <strong>Dirty Sodas</strong> and <strong>mini pancakes</strong> as our main menu items—two treats designed to spark joy at every event.</p>
+  <p>Click on the logo to explore the rest of our growing menu. We're always experimenting, so expect new creations soon!</p>
+  <p>We're currently looking for a brick‑and‑mortar location. In the meantime, we offer <strong>reservations for private catering</strong> so you can bring Sips & Stacks to your party or special event.</p>
+</section>
+
+<section id="services" class="section light-bg feature-section fade-in-up fade-delay-4">
+  <h2>Featured Offerings</h2>
+  <div class="service-grid">
+    <div class="service-card highlight fade-in-up fade-delay-1">
+      <h3>Signature Flights</h3>
+      <p>Mix-and-match flights of drinks and snacks that elevate any tasting experience.</p>
+    </div>
+    <div class="service-card fade-in-up fade-delay-2">
+      <h3>Seasonal Menus</h3>
+      <p>Rotating selections inspired by local flavors and seasonal ingredients.</p>
+    </div>
+    <div class="service-card fade-in-up fade-delay-3">
+      <h3>Chef Pairings</h3>
+      <p>Food and beverage combinations designed to complement every sip.</p>
+    </div>
+    <div class="service-card fade-in-up fade-delay-4">
+      <h3>Pop-Up Stations</h3>
+      <p>Interactive tasting bars that engage guests and spark conversation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section light-bg fade-in-up fade-delay-4">
+  <h2>Book Us</h2>
+  <p>Let us help you plan the perfect combination of drinks and food.</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Event Details" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="fade-in fade-delay-3">
+  <p>© 2025 Sips & Stacks | Castalia, OH</p>
+  <a href="https://www.facebook.com/share/1Mt6kWymyD/?mibextid=wwXIfr">Facebook</a>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if(navToggle){
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  }
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-in-up');
+    fadeElements.forEach(el => {
+      el.style.animationPlayState = 'running';
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C&D Mobile Bartending</title>
+  <link rel="stylesheet" href="Bar.css">
+ <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="global-nav fade-in fade-delay-1">
+  <div class="nav-logo"></div>
+  <ul class="nav-menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="Sips_Stacks.html">Sips & Stacks</a></li>
+    <li><a href="EpicFoamParty.html">Epic Foam Party</a></li>
+    <li><a href="A_Rentals.html">A+ Rentals</a></li>
+    <li><a href="index.html">Bartending Service</a></li>
+  </ul>
+  <div class="nav-toggle">☰</div>
+</nav>
+
+<header class="hero fade-in-up fade-delay-2">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Raise the Bar at Your Next Event</h1>
+    <p>Professional mobile bartending that keeps the good times flowing.</p>
+    <a href="#contact" class="btn">Book Us Now</a>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="section fade-in-up fade-delay-3">
+    <h2>About Us</h2>
+    <p>
+      At <strong>C&D Mobile Bartending Service</strong>, we believe every great event deserves an unforgettable bar experience.
+      Our certified mixologists bring energy, creativity, and professionalism to every occasion — whether it’s a wedding,
+      private party, or corporate gathering.
+    </p>
+  </section>
+
+  <section id="services" class="section light-bg fade-in-up fade-delay-4">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card fade-in-up fade-delay-1">
+        <h3>Private Events</h3>
+        <p>Custom cocktail menus and interactive service for any celebration.</p>
+      </div>
+      <div class="service-card fade-in-up fade-delay-2">
+        <h3>Weddings</h3>
+        <p>Elegant setups and signature drinks that make your big day shine.</p>
+      </div>
+      <div class="service-card fade-in-up fade-delay-3">
+        <h3>Corporate Events</h3>
+        <p>Professional bartending with a touch of style and sophistication.</p>
+      </div>
+      <div class="service-card fade-in-up fade-delay-4">
+        <h3>Full-Service Bartending</h3>
+        <p>Bartender(s) provided, Full setup & breakdown, Mixing and serving drinks, Basic garnishes included</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section fade-in-up fade-delay-3">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="imagesevent1.jpg.jpg" alt="Bartender mixing drink">
+      <img src="imagesevent2.jpg" alt="Cocktail setup">
+      <img src="imagesevent3.jpg" alt="Guests enjoying drinks">
+      <img src="imagesevent4.jpg" alt="Bartending at event">
+    </div>
+  </section>
+
+  <section id="contact" class="section light-bg fade-in-up fade-delay-4">
+    <h2>Book Us</h2>
+    <p>Let’s make your event unforgettable. Tell us about your occasion below!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Event Details" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="fade-in fade-delay-3">
+  <p>© 2025 C&D Mobile Bartending Service | Castalia, OH</p>
+  <a href="https://www.facebook.com/share/1Mt6kWymyD/?mibextid=wwXIfr">Facebook</a>
+</footer>
+
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+if(navToggle){ navToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); }); }
+
+// Trigger animations
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.fade-in, .fade-in-up').forEach(el => { el.style.animationPlayState = 'running'; });
+});
+</script>
+</body>
+</html>
